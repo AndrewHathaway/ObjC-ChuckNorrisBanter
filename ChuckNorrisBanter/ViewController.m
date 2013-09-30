@@ -9,7 +9,11 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
 
+    NSURL *_apiBase;
+    
+}
 @end
 
 @implementation ViewController
@@ -17,13 +21,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    _apiBase = [NSURL URLWithString:@"http://api.icndb.com/"];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)grabJokeBtn:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome" message:@"HAI" delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
+    [alert show];
+}
 @end
