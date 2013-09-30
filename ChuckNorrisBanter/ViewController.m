@@ -13,6 +13,7 @@
     NSURL *_apiBase;
     NSURL *_rndmEndpoint;
     NSMutableData *_receivedJoke;
+    NSURLConnection *_theConnection;
     NSURLRequest *_randomJokeRequest;
 }
 @end
@@ -37,12 +38,31 @@
 
 - (IBAction)grabJokeBtn:(id)sender
 {
-    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:_randomJokeRequest delegate:self];
+    _theConnection = [[NSURLConnection alloc] initWithRequest:_randomJokeRequest delegate:self];
     
-    if(! connection) {
+    if(! _theConnection) {
         UIAlertView *noConnectionAlert = [[UIAlertView alloc] initWithTitle:@"Damn!" message:@"There has been problems connecting" delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
         [noConnectionAlert show];
     }
 }
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+    [_receivedJoke setLength:0];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    [_receivedJoke appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    _theConnection = nil;
+    _receivedJoke = nil;
+    
+    UIAlertView *noConnectionAlert = [[UIAlertView alloc] initWithTitle:@"Damn!" message:@"There has been problems grabbing a tweet" delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
+    
+    [noConnectionAlert show];}
 
 @end
