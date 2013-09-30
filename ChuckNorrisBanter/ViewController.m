@@ -12,7 +12,7 @@
 {
 
     NSURL *_apiBase;
-    
+    NSURL *_rndmBase;
 }
 @end
 
@@ -23,8 +23,7 @@
     [super viewDidLoad];
     
     _apiBase = [NSURL URLWithString:@"http://api.icndb.com/"];
-    
-    
+    _rndmBase = [NSURL URLWithString:@"jokes/random/" relativeToURL:_apiBase];
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,7 +32,7 @@
 }
 
 - (IBAction)grabJokeBtn:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome" message:@"HAI" delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
-    [alert show];
+    
 }
+
 @end
