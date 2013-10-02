@@ -121,6 +121,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0C32773117FCDB77005FA920 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40E6482517F9E05500C5E042 /* ViewController.h */,
+				40E6482617F9E05500C5E042 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		0C7ED19A17FCDA440002420A /* JSONModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,8 +229,7 @@
 				40E6481F17F9E05500C5E042 /* AppDelegate.h */,
 				40E6482017F9E05500C5E042 /* AppDelegate.m */,
 				40E6482217F9E05500C5E042 /* Main.storyboard */,
-				40E6482517F9E05500C5E042 /* ViewController.h */,
-				40E6482617F9E05500C5E042 /* ViewController.m */,
+				0C32773117FCDB77005FA920 /* Controllers */,
 				0C32772E17FCDB08005FA920 /* Models */,
 				40E6482817F9E05500C5E042 /* Images.xcassets */,
 				40E6481717F9E05500C5E042 /* Supporting Files */,
