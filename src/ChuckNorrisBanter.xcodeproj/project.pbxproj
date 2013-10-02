@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C32773317FCDBE7005FA920 /* Joke.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C32773217FCDBE7005FA920 /* Joke.m */; };
+		0C32773517FCDBF2005FA920 /* JokeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C32773417FCDBF2005FA920 /* JokeResponse.m */; };
 		0C7ED1B417FCDA440002420A /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7ED19D17FCDA440002420A /* JSONModel.m */; };
 		0C7ED1B517FCDA440002420A /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7ED19F17FCDA440002420A /* JSONModelArray.m */; };
 		0C7ED1B617FCDA440002420A /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7ED1A117FCDA440002420A /* JSONModelClassProperty.m */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		0C32772F17FCDB5F005FA920 /* Joke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joke.h; sourceTree = "<group>"; };
 		0C32773017FCDB5F005FA920 /* JokeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokeResponse.h; sourceTree = "<group>"; };
+		0C32773217FCDBE7005FA920 /* Joke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joke.m; sourceTree = "<group>"; };
+		0C32773417FCDBF2005FA920 /* JokeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokeResponse.m; sourceTree = "<group>"; };
 		0C7ED19C17FCDA440002420A /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
 		0C7ED19D17FCDA440002420A /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
 		0C7ED19E17FCDA440002420A /* JSONModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray.h; sourceTree = "<group>"; };
@@ -116,7 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				0C32772F17FCDB5F005FA920 /* Joke.h */,
+				0C32773217FCDBE7005FA920 /* Joke.m */,
 				0C32773017FCDB5F005FA920 /* JokeResponse.h */,
+				0C32773417FCDBF2005FA920 /* JokeResponse.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -369,7 +375,9 @@
 				0C7ED1B917FCDA440002420A /* JSONAPI.m in Sources */,
 				0C7ED1BD17FCDA440002420A /* JSONValueTransformer.m in Sources */,
 				40E6482717F9E05500C5E042 /* ViewController.m in Sources */,
+				0C32773317FCDBE7005FA920 /* Joke.m in Sources */,
 				0C7ED1B417FCDA440002420A /* JSONModel.m in Sources */,
+				0C32773517FCDBF2005FA920 /* JokeResponse.m in Sources */,
 				0C7ED1BC17FCDA440002420A /* JSONKeyMapper.m in Sources */,
 				0C7ED1BB17FCDA440002420A /* JSONModel+networking.m in Sources */,
 				0C7ED1B817FCDA440002420A /* NSArray+JSONModel.m in Sources */,
