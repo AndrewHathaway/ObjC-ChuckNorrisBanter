@@ -44,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C32772F17FCDB5F005FA920 /* Joke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joke.h; sourceTree = "<group>"; };
+		0C32773017FCDB5F005FA920 /* JokeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokeResponse.h; sourceTree = "<group>"; };
 		0C7ED19C17FCDA440002420A /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
 		0C7ED19D17FCDA440002420A /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
 		0C7ED19E17FCDA440002420A /* JSONModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray.h; sourceTree = "<group>"; };
@@ -65,8 +67,6 @@
 		0C7ED1B117FCDA440002420A /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
 		0C7ED1B217FCDA440002420A /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
 		0C7ED1B317FCDA440002420A /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
-		403DAC8517FB7AA60045BB2A /* JokeResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JokeResponse.h; sourceTree = "<group>"; };
-		403DAC8617FB7E1B0045BB2A /* Joke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Joke.h; sourceTree = "<group>"; };
 		40E6480D17F9E05500C5E042 /* ChuckNorrisBanter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisBanter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E6481017F9E05500C5E042 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		40E6481217F9E05500C5E042 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C32772E17FCDB08005FA920 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C32772F17FCDB5F005FA920 /* Joke.h */,
+				0C32773017FCDB5F005FA920 /* JokeResponse.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0C7ED19A17FCDA440002420A /* JSONModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,10 +222,9 @@
 				40E6482217F9E05500C5E042 /* Main.storyboard */,
 				40E6482517F9E05500C5E042 /* ViewController.h */,
 				40E6482617F9E05500C5E042 /* ViewController.m */,
+				0C32772E17FCDB08005FA920 /* Models */,
 				40E6482817F9E05500C5E042 /* Images.xcassets */,
 				40E6481717F9E05500C5E042 /* Supporting Files */,
-				403DAC8517FB7AA60045BB2A /* JokeResponse.h */,
-				403DAC8617FB7E1B0045BB2A /* Joke.h */,
 			);
 			path = ChuckNorrisBanter;
 			sourceTree = "<group>";
