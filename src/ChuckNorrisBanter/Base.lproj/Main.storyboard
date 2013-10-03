@@ -26,13 +26,28 @@
                                     <action selector="grabJokeBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gz5-SP-7dV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joke bro" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="clG-dq-ns1">
+                                <rect key="frame" x="20" y="30" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="oUQ-KS-meU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="clG-dq-ns1" secondAttribute="centerX" id="BY7-Qt-KYP"/>
                             <constraint firstAttribute="centerX" secondItem="i5h-gD-oLt" secondAttribute="centerX" id="SHO-nP-XBK"/>
+                            <constraint firstItem="clG-dq-ns1" firstAttribute="top" secondItem="Tpw-3x-mUw" secondAttribute="bottom" constant="10" id="b6k-HO-9Iv"/>
                             <constraint firstItem="PGJ-ie-u8L" firstAttribute="top" secondItem="i5h-gD-oLt" secondAttribute="bottom" constant="50" id="fay-6b-baY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="jkLabel" destination="clG-dq-ns1" id="ajm-PO-oJU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

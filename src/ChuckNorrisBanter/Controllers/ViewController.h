@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController <NSURLConnectionDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *jkLabel;
 - (IBAction)grabJokeBtn:(id)sender;
 
 @end

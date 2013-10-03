@@ -36,10 +36,9 @@
 
 - (IBAction)grabJokeBtn:(id)sender
 {
-    _newJoke = [[JokeResponse alloc] initFromURLWithString:[_rndmEndpoint absoluteString]
-                                                       completion:^(JSONModel *model, JSONModelError *err) {
-                                                           NSLog(@"Loaded: %@", _newJoke.value.joke);
-                                                       }];
+    _newJoke = [[JokeResponse alloc] initFromURLWithString:[_rndmEndpoint absoluteString] completion:^(JSONModel *model, JSONModelError *err) {
+        _jkLabel.text = _newJoke.value.joke;
+    }];
 }
 
 
