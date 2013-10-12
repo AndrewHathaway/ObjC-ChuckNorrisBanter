@@ -25,8 +25,10 @@
 {
     [super viewDidLoad];
     
-    _apiBase = [NSURL URLWithString:@"http://api.icndb.com/"];
-    _rndmEndpoint = [NSURL URLWithString:@"jokes/random/" relativeToURL:_apiBase];
+    _apiBase = [NSURL URLWithString:@"http://api.icndb.com/"]; //Setup API URL
+    _rndmEndpoint = [NSURL URLWithString:@"jokes/random/" relativeToURL:_apiBase]; //Setup endpoint URL
+    
+    [self getNewJoke]; //Get a new joke
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,6 +38,12 @@
 
 - (IBAction)grabJokeBtn:(id)sender
 {
+    [self getNewJoke]; //Get a new joke
+}
+
+- (void)getNewJoke
+{
+    //Get a random joke and update the label
     _newJoke = [[JokeResponse alloc] initFromURLWithString:[_rndmEndpoint absoluteString] completion:^(JSONModel *model, JSONModelError *err) {
         _jkLabel.text = _newJoke.value.joke;
     }];
